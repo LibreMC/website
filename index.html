@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s3.css">
+    <link rel="icon" type="image/png" href="img/server-icon.png">
+    <title>LibreMC - Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <img width="256px" height="256px" src="img/libremcearth4.png">
+        <div class="button" id="button_chosen"> <a>Home</a> </div>
+        <div class="button"> <a href="rules.html">Rules</a> </div>
+        <div class="button"> <a href="help.html">Guide</a> </div>
+        <div class="button"> <a href="https://map.libremc.net">Map</a> </div>
+        <div class="button"> <a href="https://discord.com/invite/cCuC4SmeGx">Discord</a> </div>
+    </div>
+
+    <div class="content">
+        <h1 style="text-align: center;">LibreMC Earth server</h1>
+        <p>LibreMC is a new Minecraft Earth server for 1.21.5 Java edition. It features: </p>
+        <ul>
+            <li>A 1:750 Earth map</li>
+            <li>A Gold-based economy</li>
+            <li>Town and nation building</li>
+            <li>No war</li>
+        </ul>
+
+        <p>
+            This server allows you to build towns and nations on a real Earth map. The focus is building and expanding towns
+            and nations, giving you a place for geopolitical roleplay and building. There is no war and PvP is restricted to
+            arenas, so you don't have to worry about losing anything you've worked hard for. 
+        </p>
+        <p>
+            The gameplay is designed to be simple and not overly complicated, it's meant to be as close to vanilla Minecraft
+            as possible.
+        </p>
+
+        <h1 style="text-align: center;">IP: libremc.net</h1>
+    </div>
+    <canvas id="background"></canvas>
+</body>
+</html>
+
+<script>
+    var body = document.getElementsByTagName('body')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'snowflake.js';
+    body.appendChild(script);
+</script>

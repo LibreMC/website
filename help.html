@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s3.css">
+    <link rel="icon" type="image/png" href="img/server-icon.png">
+    <title>LibreMC - Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <img width="256px" height="256px" src="img/libremcearth4.png">
+        <div class="button"> <a>Home</a> </div>
+        <div class="button"> <a href="rules.html">Rules</a> </div>
+        <div class="button"> <a href="help.html"  id="button_chosen">Guide</a> </div>
+        <div class="button"> <a href="https://map.libremc.net">Map</a> </div>
+        <div class="button"> <a href="https://discord.com/invite/cCuC4SmeGx">Discord</a> </div>
+    </div>
+
+    <div class="content">
+        <h1 style="text-align: center;">Beginner's guide</h1>
+
+        <h1>Travelling</h1>
+        <p>First, check out our <a href="https://map.libremc.net">map</a> to see where you are. Your visibility is based on light-levels, so if you're in a cave or it's night time you won't see yourself. Once you know where you are you
+        should figure out which part of the world you wanna go to. You can teleport to towns using <code>/t spawn NAME</code>, where <code>NAME</code> is the name of the town.</p>
+        
+        <h1>Towns and nations</h1>
+        <p>This server uses Towny, a server plugin which allows you to create towns and nations. You can either join or create a town. Towns can then join or create nations. To
+            setup a town you need <b>50 gold</b>. Once you have enough gold you can use <code>/t create NAME</code> where <code>NAME</code> is the name of your town. You'll need to pay a small sum for upkeep
+            every 24 hours, which you can see by doing <code>/t</code> and look at the "upkeep" section.
+        </p>
+
+        <p>To pay for your upkeep and costs of claiming more land you need to deposit it into your town's bank using <code>/t deposit AMOUNT</code>, where <code>AMOUNT</code> is the amount of gold you want to deposit</p>
+
+        <p>To claim more land you do <code>/t claim</code> in a chunk you haven't claimed yet. Each chunk costs <b>12 gold</b> to claim until you reach your claim limit, which you can also see using <code>/t</code>. You can get a higher limit
+        by either buying bonus chunks or by getting more players in your town</p>
+
+        <h1>Obtaining gold</h1>
+
+        <p>The primary way of obtaining gold is by mining. The gold deposits are based off IRL deposits, so you'll find more gold there where there is gold in real life. You can also mine in the nether,
+            however the amount of gold is smaller and you can't teleport to any towns while in the nether</p>
+
+        </div>
+    <canvas id="background"></canvas>
+</body>
+</html>
+
+<script>
+    var body = document.getElementsByTagName('body')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'snowflake.js';
+    body.appendChild(script);
+</script>
